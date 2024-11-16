@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosby BMI Calculator</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #333;
+            box-sizing: border-box;
+        }
+        .main {
+            background-color: #f2f2f2;
+            max-width: 500px;
+            height: 520px;
+            margin: 0 auto;
+            padding: 2rem;
+            border-radius: 10px;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        h1 {
+            /* font-size: 3rem; */
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2rem;
+            color: #333;
+            margin: 20 0px;
+        }
+        label {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        input {
+            padding: .5rem 0;
+            margin: 1rem 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            display: inline-block;
+            width: 100%;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+        input:focus {
+            outline: none;
+        }
+        input[type=button] {
+            display: block;
+            margin: 20px auto ;
+            width: 50%;
+            background-color: rgb(255, 128, 0);
+        }
+        input[type=button]:hover {
+            background-color: rgb(234, 128, 21);
+            color: #f2f2f2;
+        }
+        hr {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Cosby BMI Calculator</h1>
+        <hr>
+        <label for="weight">Weight:</label>
+        <input type="number" min="1" step=".01" placeholder="Enter your weight (kg)">
+        <label for="weight">Height:</label>
+        <input type="number" min="1" step=".01" placeholder="Enter your weight (m)">
+        <input type="button" value="Calculate">
+        <h2>Your BMI: <span class="Calculated-BMI">BMI</span></h2>
+    </div>
+</body>
+</html>
